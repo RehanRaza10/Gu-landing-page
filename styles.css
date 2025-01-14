@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +41,7 @@ header {
   letter-spacing: 0.5px;
   font-family: "roboto";
 }
+
 .apply-btn-right {
   rotate: -90deg;
 }
@@ -47,6 +49,7 @@ header {
 .sticky-social-icons {
   z-index: 99999;
 }
+
 .sticky-social-icons a {
   border-radius: 50px;
   background-color: #ff5f19;
@@ -66,6 +69,7 @@ header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -121,6 +125,7 @@ header {
   transform: scale(1.1);
   border: 2px solid #ffffff;
 }
+
 /*  */
 .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.7) !important;
@@ -134,8 +139,10 @@ header {
 /* student feedback */
 .testimonial-card {
   border-radius: 10px;
-  background-color: #f8f9fa; /* Light background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f8f9fa;
+  /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
   padding: 20px;
 }
 
@@ -144,7 +151,8 @@ header {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ff5f19; /* Add border color for profile */
+  border: 2px solid #ff5f19;
+  /* Add border color for profile */
 }
 
 .testimonial-name {
@@ -164,16 +172,23 @@ header {
 
 .card-img-top {
   width: 100%;
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image fills the area while maintaining aspect ratio */
+  height: 200px;
+  /* Set a fixed height */
+  object-fit: cover;
+  /* Ensures the image fills the area while maintaining aspect ratio */
 }
 
 
-.top-company
-{
+.top-company {
   width: 400px;
   /* height: 400px; */
 }
+
+.accordion-button {
+  font-weight: 600;
+  font-family: inherit;
+}
+
 
 
 
@@ -182,87 +197,103 @@ header {
 .footer {
   background-color: #eaf7f9;
 }
+
 .footer a {
   color: black;
   text-decoration: none;
 }
+
 .logo {
   width: 150px;
   height: 150px;
   object-fit: contain;
 }
+
 .footer-section {
   padding: 10px;
 }
 
 .carousel img {
-          width: 100px;
-          height: auto;
-        }
-      
-        @media (max-width: 768px) {
-          .carousel img {
-            width: 70px; /* Smaller width for mobile */
-          }
-        }
-      
-        @media (max-width: 480px) {
-          .carousel img {
-            width: 50px; /* Even smaller width for very small screens */
-          }
-        }
-        
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    width: 70px;
+    /* Smaller width for mobile */
+  }
+  .custom-underline
+{
+  text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  .carousel img {
+    width: 50px;
+    /* Even smaller width for very small screens */
+  }
+}
+
 .custom-bg {
   background-color: #e6e6e6;
   background-image: linear-gradient(360deg, #FFFFFF 40%, rgba(255, 255, 255, 0.18) 100%);
- }
- 
- .btn-apply {
-          border-radius: 50%;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 10px 20px;
-        }
+}
+
+.btn-apply {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
 .btn-apply i {
-          margin-left: 8px;
-        }
-       
-        .carousel-inner {
-          display: flex;
-        }
-        .carousel-item {
-          flex: 0 0 100%;
-          display: flex;
-          justify-content: center;
-          transition: transform 0.5s ease-in-out;
-        }
-        .carousel .card {
-          flex: 0 0 20%; /* Each card will take 20% of the width to fit 5 cards */
-          max-width: 20%;
-          margin: 0 5px;
-        }
-        .carousel .card img {
-          height: 420px;
-          width: 100%;
-          object-fit: cover;
-        }
-      
-        @media (max-width: 768px) {
-          .carousel .card {
-            flex: 0 0 33.333%; /* Adjust to show fewer cards on smaller screens */
-            max-width: 33.333%;
-          }
-        }
-      
-        @media (max-width: 576px) {
-          .carousel .card {
-            flex: 0 0 50%; /* Adjust to show fewer cards on smaller screens */
-            max-width: 50%;
-          }
-        }
-     
-      
+  margin-left: 8px;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel .card {
+  flex: 0 0 20%;
+  /* Each card will take 20% of the width to fit 5 cards */
+  max-width: 20%;
+  margin: 0 5px;
+}
+
+.carousel .card img {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel .card {
+    flex: 0 0 33.333%;
+    /* Adjust to show fewer cards on smaller screens */
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel .card {
+    flex: 0 0 50%;
+    /* Adjust to show fewer cards on smaller screens */
+    max-width: 50%;
+  }
+}
+
+
 
 /* Default state: Show GUTS section, hide the image */
 .guts-section {
@@ -276,10 +307,11 @@ header {
 /* On small screens, hide GUTS section and show the image */
 @media (max-width: 767px) {
   .guts-section {
-      display: none !important;
+    display: none !important;
   }
+
   .mobile-guts-image {
-      display: block !important;
+    display: block !important;
   }
 }
 
@@ -288,7 +320,8 @@ header {
 .carousel img-r {
   margin-left: 5px;
   margin-right: 5px;
-  width: calc(100% / 5 - 10px); /* 5 images per slide with small gap */
+  width: calc(100% / 5 - 10px);
+  /* 5 images per slide with small gap */
 }
 
 /* Ensure 5 images per slide */
@@ -303,6 +336,7 @@ header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -322,8 +356,10 @@ header {
 }
 
 .carousel-item .card {
-  flex: 1 0 18%; /* Each card will take up 18% of the width to show 5 images */
-  margin: 0 5px; /* Margin between cards */
+  flex: 1 0 18%;
+  /* Each card will take up 18% of the width to show 5 images */
+  margin: 0 5px;
+  /* Margin between cards */
 }
 
 .carousel-item .card img {
@@ -334,19 +370,22 @@ header {
 /* Mobile: Show 1 image per slide with full width */
 @media (max-width: 768px) {
   .carousel-item .d-flex {
-    display: block; /* Stack images vertically */
+    display: block;
+    /* Stack images vertically */
   }
 
   .carousel-item .card {
-    flex: 0 0 100%; /* Each card will take up 100% of the width */
-    margin: 0; /* No margin needed on mobile */
+    flex: 0 0 100%;
+    /* Each card will take up 100% of the width */
+    margin: 0;
+    /* No margin needed on mobile */
   }
 
   .carousel-item .card img {
-    width: 100%; /* Make images fill the card */
+    width: 100%;
+    /* Make images fill the card */
     height: auto;
   }
 
-  
-}
 
+}
